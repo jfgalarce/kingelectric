@@ -7,8 +7,19 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { Divide } from "lucide-react";
 const Galeria = () => {
   return (
+    <div className="grid grid-cols-2">
+      <div className="bg-slate-800 text-slate-100 pl-50 flex flex-col items-start justify-center">
+      <div className="text-5xl font-bold flex gap-2 items-center">
+      <div className="h-2 bg-red-600 w-5 rounded-2xl"></div>
+          <label className="text-slate-100 font-medium text-lg">
+            Profecional Roof Repail
+          </label>
+      </div>
+        <div className="text-5xl font-bold">We Provide Complete Roofing Solution </div>
+        </div> 
     <Carousel
       className="w-full relative "
       plugins={[
@@ -42,10 +53,17 @@ const Galeria = () => {
             src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/434263931_935449485255058_4662313460692918870_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Suhsz5W04IIQ7kNvgFyVgcO&_nc_oc=AdiKKn4kgOHRrop53V6ldSGc_5R-4gAFsSTVBY5n483p2hjKvLxduP0a_29P1CWaDBY&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=8k9XT4ETBc81dWpFLaqc-w&oh=00_AYEq_fKJfFBzSXRkuaVhRbrqWJv6-ZL__fHkxSGAKhYK2w&oe=67DA8571"
           />
         </CarouselItem>
+        <CarouselItem>
+          <img
+            className="w-full"
+            src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/480812517_1197702592363078_708225305399038100_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NLKJ9TpQrJMQ7kNvgHy9WNe&_nc_oc=AdggPI_TJUq_1DyYLn7BtIwmaFG6ka4trtm61uDinDnA9RsDAxwdPShekkF0Iq2pzaQ&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=nipPRBEFH9YPa4SgY-24fg&oh=00_AYE2y-FlJCH-NduDdlTBwYtRx1IFTVHBVvij-Xc7uueXfw&oe=67DBD0A9"
+          />
+        </CarouselItem>
       </CarouselContent>
       <CarouselPrevious className="absolute top-1/2 left-5  text-white" />
       <CarouselNext className="absolute top-1/2 right-5 text-white" />
     </Carousel>
+    </div>
   );
 };
-export default Galeria; 
+export default Galeria;  

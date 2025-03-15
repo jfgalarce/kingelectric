@@ -1,4 +1,4 @@
-import { IoMailOutline,IoLogoFacebook,IoLogoTwitter,IoLogoInstagram,IoLogoLinkedin, IoTimeOutline,IoLogoYoutube} from "react-icons/io5";
+import { IoMailOutline,IoLogoFacebook,IoLogoTwitter,IoLogoInstagram,IoLogoLinkedin, IoTimeOutline,IoLogoYoutube,IoLogoWhatsapp} from "react-icons/io5";
 const Header = () => {
   return (
     <div className="bg-red-600 h-16  w-full flex  text-white items-center justify-between px-4 max-md:hidden -mb-1">
@@ -12,6 +12,7 @@ const Header = () => {
         <a href="#" target="_blank" className=" flex gap-1 items-center"><IoLogoInstagram className="  size-5" /></a>
         <a href="#" target="_blank" className=" flex gap-1 items-center"><IoLogoLinkedin className=" size-5" /></a>
         <a href="#" target="_blank" className=" flex gap-1 items-center"><IoLogoYoutube className=" size-5" /></a>
+        <a href="#" target="_blank" className=" flex gap-1 items-center"><IoLogoWhatsapp className=" size-5" /></a>
       </div>
     </div>
   );

@@ -1,15 +1,18 @@
-import About from "@/components/About";
-import Header from "@/components/Header";
+import About from "@/components/home/About";
 import Galeria from "@/components/home/Galeria";
-import Menu from "@/components/Menu";
+import Help from "@/components/home/Help";
+import Section1 from "@/components/home/Section1";
+import Services from "@/components/home/Services";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <Menu />
+    <div className="w-full">
+      
       <Galeria />
       <About />
-    </>
+      <Help />
+      <Services />
+      <Section1 />
+    </div>
   );
 }
