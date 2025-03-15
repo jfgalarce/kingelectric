@@ -3,15 +3,15 @@ import Button from "../ui/myUI/Button";
 import { IoArrowForward } from "react-icons/io5";
 const About = () => {
   return (
-    <div className="w-full pt-16 grid grid-cols-2 justify-center gap-10">
-      <div className="flex justify-end">
+    <div className="w-full pt-16 grid grid-cols-2 justify-center gap-10 max-sm:grid-cols-1 max-sm:p-2">
+      <div className="flex justify-end max-sm:hidden">
         <img
           alt="foto1"
           className="rounded-lg shadow"
           src="https://gramentheme.com/wp/rooftek/wp-content/uploads/2023/12/about-5.jpg"
         />
       </div>
-      <div className="items-start w-min ">
+      <div className="items-start ">
         <div className="flex gap-2 items-center py-3 text-red-600 font-semibold text-balance">
           <div className="h-2 bg-red-600 w-5 rounded-2xl"></div> ABOUT US
         </div>
@@ -23,8 +23,8 @@ const About = () => {
           readable content of a page when looking at layout the point of using
           lorem the is Ipsum less normal distribution of letters.
         </div>
-        <div className="text-slate-900 text-base font-medium  pt-4  flex items-center gap-1 justify-between">
-          <div className="flex items-center w-64">
+        <div className="text-slate-900 text-base font-medium  pt-4  flex items-center gap-1 justify-between max-sm:flex-col">
+          <div className="flex items-center w-64 ">
             <IoCheckmarkCircleOutline className="size-5 text-red-600" />
             Accurate Testing Processes
           </div>
@@ -33,7 +33,7 @@ const About = () => {
             300+ Successful Projects done
           </div>
         </div>
-        <div className="text-slate-900 text-base font-medium py-3 flex items-center gap-1 justify-between">
+        <div className="text-slate-900 text-base font-medium py-3 flex items-center gap-1 justify-between max-sm:flex-col">
           <div className="flex items-center w-64">
             <IoCheckmarkCircleOutline className="size-5 text-red-600" />
             100% Satisfaction Guarantee

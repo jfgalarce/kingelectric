@@ -8,11 +8,11 @@ const Menu = () => {
           src="https://res.cloudinary.com/ddgqhpvjd/image/upload/v1741983965/KONIG_Electric/sapgcscsmr5tgfxzorlf.png"
         />
       </div>
-      <div className="text-slate-800 font-semibold flex items-center justify-evenly  max-sm:text-sm text-xl w-full pr-56">
+      <div className="text-slate-800 font-semibold flex items-center justify-evenly  max-sm:text-sm text-xl w-full pr-56 max-sm:pr-0">
         <a href="#" className="hover:text-red-500">
           Home
         </a>
-        <a href="#" className="hover:text-red-500">
+        <a href="#" className="hover:text-red-500 flex">
           About Us
         </a>
         <a href="#" className="hover:text-red-500">
