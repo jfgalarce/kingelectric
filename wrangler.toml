@@ -1,4 +1,3 @@
 name = "kingelectric"
-type = "javascript"
-main = "./.output/server/index.mjs" # Asegúrate de que este archivo existe después de compilar
+main = "out/index.html" # Asegúrate de que este archivo existe después de compilar
 compatibility_date = "2024-01-01"
