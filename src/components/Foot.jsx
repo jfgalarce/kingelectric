@@ -10,8 +10,8 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import Link from "next/link";
 const Foot = () => {
   return (
-    <div className="w-full bg-slate-800 py-10">
-      <div className="w-[70rem] max-md:w-full m-auto grid grid-cols-2 gap-10">
+    <div className="w-full bg-slate-800 pt-5 px-2">
+      <div className="w-[70rem] max-sm:w-full max-md:w-full max-lg:w-full m-auto grid grid-cols-2 gap-10 max-sm:grid-cols-1 max-md:grid-cols-1">
         <div className="flex flex-col items-start gap-4">
           <p className="text-slate-100 font-semibold text-3xl">KÖNIG <label className="text-xl">Eletrical</label></p>
           <p className="text-slate-400 text-justify">
@@ -84,8 +84,8 @@ const Foot = () => {
           </Link>
         </div>
       </div>
-      <div className="border-t border-t-slate-600 py-5">
-        <div className="w-[70rem] max-md:w-full m-auto flex justify-between items-center">
+      <div className="border-t border-t-slate-600 ">
+        <div className="w-[70rem] max-sm:w-full max-md:w-full max-lg:w-full m-auto flex justify-between items-center max-sm:flex-col max-md:flex-col p-2 ">
           <p className="text-slate-100">Copyright ©2025 Könin Eletrical. All Rights Reserved</p>
           <div className="text-slate-100 flex gap-5">
             <Link className="hover:text-red-700" href="/">Terms & Condition</Link>
