@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npx wrangler pages deploy .next"
+    "deploy": "opennextjs-cloudflare && wrangler deploy",
+    "check": "opennextjs-cloudflare && tsc && wrangler deploy --dry-run",
+    "preview": "opennextjs-cloudflare && wrangler dev",
+    "types": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.6",
@@ -30,6 +33,6 @@
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
     "tailwindcss": "^4",
-    "wrangler": "^4.0.0"
+    "wrangler": "3.107.3"
   }
 }
