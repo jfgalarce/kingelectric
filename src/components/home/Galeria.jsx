@@ -11,14 +11,14 @@ import React from "react";
 const Galeria = () => {
   return (
     <div className="grid grid-cols-2 max-sm:grid-cols-1 max-md:grid-cols-1">
-      <div className="bg-slate-800 text-slate-100 pl-50 max-sm:p-5 max-md:p-5 max-lg:p-5  flex flex-col items-start justify-center">
+      <div className="bg-slate-800 text-slate-100 pl-32 max-sm:p-5 max-md:p-5 max-lg:p-5  flex flex-col items-start justify-center">
         <div className="text-5xl font-bold flex gap-2 items-center">
           <div className="h-2 bg-red-600 w-5 rounded-2xl"></div>
           <label className="text-slate-100 font-medium text-lg">
             Professional Electrical Services
           </label>
         </div>
-        <div className="text-5xl font-bold">
+        <div className="text-5xl font-bold max-lg:text-4xl">
           We Provide Complete Electrical Installation & Renovation Solutions.
         </div>
       </div>

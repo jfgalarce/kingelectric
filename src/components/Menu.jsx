@@ -36,23 +36,23 @@ const Menu = () => {
           src="https://res.cloudinary.com/ddgqhpvjd/image/upload/v1741983965/KONIG_Electric/sapgcscsmr5tgfxzorlf.png"
         />
       </div>
-      <div className="text-slate-800 font-semibold flex items-center justify-evenly  text-xl w-full pr-56 max-lg:hidden max-sm:hidden max-md:hidden ">
-        <Link href="/" className={`hover:text-red-500 ${paramt.length===0?'text-red-500':' '}`}>
+      <div className="text-slate-800 divide-x font-semibold grid grid-cols-6 text-xl items-center justify-evenly w-full max-sm:hidden max-md:hidden max-lg:text-sm ">
+        <Link href="/" className={`hover:text-red-500 ${paramt.length===0?'text-red-500':' '} flex justify-center border-slate-800`}>
           Home
         </Link>
-        <Link href="/about" className={`hover:text-red-500 ${paramt[0]==='about'?'text-red-500':' '}`}>
+        <Link href="/about" className={`hover:text-red-500 ${paramt[0]==='about'?'text-red-500':' '} flex justify-center border-slate-800`}>
           About Us
         </Link>
-        <Link href="/" className="hover:text-red-500">
+        <Link href="/services" className={`hover:text-red-500 ${paramt[0]==='services'?'text-red-500':' '} flex justify-center border-slate-800`}>
           Our Services
         </Link>
-        <Link href="/" className="hover:text-red-500">
+        <Link href="/projects" className={`hover:text-red-500 ${paramt[0]==='projects'?'text-red-500':' '} flex justify-center border-slate-800`}>
           Our Projects
         </Link>
-        <Link href="/" className="hover:text-red-500">
+        <Link href="/teams" className={`hover:text-red-500 ${paramt[0]==='teams'?'text-red-500':' '} flex justify-center border-slate-800`}>
           Team Members
         </Link>
-        <Link href="/" className="hover:text-red-500">
+        <Link href="/contact" className={`hover:text-red-500 ${paramt[0]==='contact'?'text-red-500':' '} flex justify-center border-slate-800`}>
           Contact Us
         </Link>
       </div>
@@ -72,7 +72,7 @@ const Menu = () => {
                 <SheetClose asChild>
                   <Link
                     href="/"
-                    className="hover:text-red-500 border-b  w-full"
+                    className={`hover:text-red-500 ${paramt[0]===''?'text-red-500':' '} border-b border-slate-800 w-full`}
                   >
                     Home
                   </Link>
@@ -80,28 +80,28 @@ const Menu = () => {
                 <SheetClose asChild>
                   <Link
                     href="/about"
-                    className="hover:text-red-500 border-b  w-full"
+                    className={`hover:text-red-500 ${paramt[0]==='about'?'text-red-500':' '} border-b border-slate-800 w-full`}
                   >
                     About Us
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
-                  <Link href="/" className="hover:text-red-500 border-b w-full">
+                  <Link href="/services" className={`hover:text-red-500 ${paramt[0]==='services'?'text-red-500':' '} border-b border-slate-800  w-full`}>
                     Our Services
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
-                  <Link href="/" className="hover:text-red-500 border-b w-full">
+                  <Link href="/projects" className={`hover:text-red-500 ${paramt[0]==='projects'?'text-red-500':' '} border-b border-slate-800 w-full`}>
                     Our Projects
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
-                  <Link href="/" className="hover:text-red-500 border-b w-full">
+                  <Link href="/teams" className={`hover:text-red-500 ${paramt[0]==='teams'?'text-red-500':' '} border-b border-slate-800 w-full`}>
                     Team Members
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
-                  <Link href="/" className="hover:text-red-500  w-full">
+                  <Link href="/contact" className={`hover:text-red-500 ${paramt[0]==='contact'?'text-red-500':' '} border-b border-slate-800 w-full`}>
                     Contact Us
                   </Link>
                 </SheetClose>

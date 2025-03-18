@@ -15,8 +15,7 @@ const Foot = () => {
         <div className="flex flex-col items-start gap-4">
           <p className="text-slate-100 font-semibold text-3xl">KÖNIG <label className="text-xl">Eletrical</label></p>
           <p className="text-slate-400 text-justify">
-            Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a
-            lacinia curabitur lacinia mollis
+            Reliable & Professional Electrical Services for Homes and Businesses. Safety, Quality, and Efficiency You Can Trust.
           </p>
           <div className="flex gap-1 hover:">
             <Link
@@ -64,8 +63,8 @@ const Foot = () => {
           <Link href="/" className="flex items-center text-slate-400 gap-2 hover:text-red-700">
             <MdKeyboardDoubleArrowRight /> Home
           </Link>
-          <Link href="/" className="flex items-center text-slate-400 gap-2 hover:text-red-700">
-            <MdKeyboardDoubleArrowRight /> About as
+          <Link href="/about" className="flex items-center text-slate-400 gap-2 hover:text-red-700">
+            <MdKeyboardDoubleArrowRight /> About us
           </Link>
           <Link href="/" className="flex items-center text-slate-400 gap-2 hover:text-red-700">
             <MdKeyboardDoubleArrowRight /> Our Services

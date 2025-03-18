@@ -1,7 +1,5 @@
-import { IoCheckmarkCircleOutline } from "react-icons/io5";
-import Button from "../ui/myUI/Button";
-import { IoArrowForward } from "react-icons/io5";
-import React from "react";
+import { IoCheckmarkCircleOutline,IoArrowForward } from "react-icons/io5";
+import Link from "next/link";
 const About = () => {
   return (
     <div className="w-full pt-10 grid grid-cols-2 justify-center gap-10 max-sm:grid-cols-1 max-sm:p-2 max-md:grid-cols-1 max-md:p-2">
@@ -49,7 +47,7 @@ const About = () => {
           <div className=" bg-slate-300 h-3 text-base font-medium  w-1/12"></div>
         </div>
         <div className="flex items-center py-4">
-          <Button>ABOUT US <IoArrowForward /></Button>
+        <Link href={'/about'} className="flex items-center justify-center text-slate-100 gap-2 p-2 bg-red-600  w-36 hover:bg-slate-800 font-medium">ABOUT <IoArrowForward />  </Link>
         </div>
       </div>
     </div>
