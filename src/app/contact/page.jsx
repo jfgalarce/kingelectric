@@ -1,8 +1,8 @@
 import { IoLocationSharp,IoCallOutline,IoMailOutline,IoArrowForward } from "react-icons/io5";
 const page = () => {
   return (
-    <div className="w-full bg-slate-100 grid grid-cols-2 gap-10 py-10">
-      <div className="grid items-start justify-end gap-5 ">
+    <div className="w-full bg-slate-100 grid grid-cols-2 gap-10 py-10 max-sm:grid-cols-1 max-md:grid-cols-1">
+      <div className="flex flex-col flex- items-end justify-between  ">
         <div className="bg-white shadow-lg h-40  flex items-center px-5">
           <div className="size-16 bg-red-600 rounded-full flex items-center justify-center">
             <IoLocationSharp className="size-10 text-white" />
@@ -32,27 +32,27 @@ const page = () => {
         </div>
       </div>
       <div className="flex items-start justify-start">
-        <div className="bg-white shadow-lg p-10">
+        <div className="bg-white shadow-lg p-10 max-sm:w-full max-md:w-full">
           <p className="flex gap-2 items-center text-red-600 text-balance font-medium"><div className="h-2 bg-red-600 w-5 rounded-2xl"></div>LET'S TALK</p>
           <p className="text-4xl text-slate-800 font-semibold pb-4">Let’s Get in Touch</p>
           <div className="w-full grid grid-cols-2 gap-4">
-            <div>
+            <div className="max-sm:col-span-2 max-md:col-span-2">
               <p className="font-medium pb-2">Your Name</p>
-              <input type="text" className="bg-slate-100 w-64 h-10" />
+              <input type="text" className="bg-slate-100 w-64 h-10 max-sm:w-full max-md:w-full" />
             </div>
-            <div>
+            <div className="max-sm:col-span-2 max-md:col-span-2">
               <p className="font-medium pb-2">Your Email</p>
-              <input type="email" className="bg-slate-100 w-64 h-10" />
+              <input type="email" className="bg-slate-100 w-64 h-10 max-sm:w-full max-md:w-full" />
             </div>
-            <div>
+            <div className="max-sm:col-span-2 max-md:col-span-2">
               <p className="font-medium pb-2">Your Phone</p>
-              <input type="text" className="bg-slate-100 w-64 h-10" />
+              <input type="text" className="bg-slate-100 w-64 h-10 max-sm:w-full max-md:w-full" />
             </div>
-            <div>
+            <div className="max-sm:col-span-2 max-md:col-span-2">
               <p className="font-medium pb-2">Subject</p>
-              <input type="text" className="bg-slate-100 w-64 h-10" />
+              <input type="text" className="bg-slate-100 w-64 h-10 max-sm:w-full max-md:w-full" />
             </div>
-            <div className="col-span-2">
+            <div className="col-span-2 ">
               <p className="font-medium pb-2">Your Messager</p>
               <textarea className="bg-slate-100 w-full h-36 resize-none" />
             </div>
