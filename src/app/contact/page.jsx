@@ -1,4 +1,4 @@
-import { IoLocationSharp,IoCallOutline,IoMailOutline } from "react-icons/io5";
+import { IoLocationSharp,IoCallOutline,IoMailOutline,IoArrowForward } from "react-icons/io5";
 const page = () => {
   return (
     <div className="w-full bg-slate-100 grid grid-cols-2 gap-10 py-10">
@@ -37,26 +37,28 @@ const page = () => {
           <p className="text-4xl text-slate-800 font-semibold pb-4">Let’s Get in Touch</p>
           <div className="w-full grid grid-cols-2 gap-4">
             <div>
-              <p>Your Name</p>
-              <input type="text" className="bg-slate-100 w-52 h-10" />
+              <p className="font-medium pb-2">Your Name</p>
+              <input type="text" className="bg-slate-100 w-64 h-10" />
             </div>
             <div>
-              <p>Your Name</p>
-              <input type="text" className="bg-slate-100 w-52 h-10" />
+              <p className="font-medium pb-2">Your Email</p>
+              <input type="email" className="bg-slate-100 w-64 h-10" />
             </div>
             <div>
-              <p>Your Name</p>
-              <input type="text" className="bg-slate-100 w-52 h-10" />
+              <p className="font-medium pb-2">Your Phone</p>
+              <input type="text" className="bg-slate-100 w-64 h-10" />
             </div>
             <div>
-              <p>Your Name</p>
-              <input type="text" className="bg-slate-100 w-52 h-10" />
+              <p className="font-medium pb-2">Subject</p>
+              <input type="text" className="bg-slate-100 w-64 h-10" />
             </div>
             <div className="col-span-2">
-              <p>Your Name</p>
-              <textarea className="bg-slate-100 w-full h-10" />
+              <p className="font-medium pb-2">Your Messager</p>
+              <textarea className="bg-slate-100 w-full h-36 resize-none" />
             </div>
-            
+            <div className="col-span-2">
+            <button className="flex items-center justify-center text-slate-100 gap-2 p-2 bg-red-600  w-36 hover:bg-slate-800 font-medium cursor-pointer">ABOUT <IoArrowForward />  </button>
+            </div>
           </div>
         </div>
       </div>
